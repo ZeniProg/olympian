@@ -1,0 +1,55 @@
+.contacts__cards {
+	display: grid;
+	align-items: center;
+	grid-auto-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.contacts-card {
+	position: relative;
+	overflow: hidden;
+	border-radius: 30px;
+	padding: 25px;
+	background-color: var(--section-bg-color);
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border: 1px solid var(--bg-gray-color);
+		border-radius: 30px;
+		opacity: 0.3;
+		pointer-events: none;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 15px;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: var(--bg-gray-color);
+	}
+
+	&__content {
+		display: grid;
+		gap: 10px;
+	}
+
+	&__text {
+		margin: 0;
+		font-style: normal;
+		text-decoration: none;
+		color: #6d6d6d;
+	}
+
+	&__descr {
+		font-weight: 600;
+		text-transform: uppercase;
+		color: var(--accent-color);
+	}
+
+	&--width {
+		grid-column: 1 / -1;
+	}
+}
