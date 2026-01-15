@@ -13,7 +13,7 @@ const burgerMenu = () => {
 };
 
 export const initBurgerMenu = () => {
-	document.addEventListener('DOMContentLoaded', burgerMenu);
+	burgerMenu();
 
 	window.addEventListener('resize', burgerMenu);
 

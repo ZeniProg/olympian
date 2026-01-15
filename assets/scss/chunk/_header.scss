@@ -17,12 +17,26 @@
 		width: 100%;
 		max-width: $container-width + px;
 		gap: 20px;
+
+		@media (max-width: 1400px) {
+			gap: 10px;
+		}
 	}
 
 	&__menu {
 		border-radius: 30px;
 		padding: 10px 15px;
 		background-color: var(--light-color);
+
+		@media (max-width: 1200px) {
+			background-color: transparent;
+		}
+	}
+
+	&__link {
+		@media (max-width: 1200px) {
+			display: none;
+		}
 	}
 
 	&--sticky {

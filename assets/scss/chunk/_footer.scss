@@ -54,6 +54,13 @@
 
 	&__menu {
 		color: var(--white-color);
+
+		.menu__list {
+			@media (max-width: 1200px) {
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
 	}
 
 	&__bottom {
