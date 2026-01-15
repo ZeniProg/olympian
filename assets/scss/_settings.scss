@@ -15,7 +15,6 @@ html {
 
 body {
 	margin: 0;
-	padding: 20px;
 	font-family: var(--font-main);
 	font-weight: 400;
 	line-height: var(--line-height);
@@ -32,6 +31,7 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	padding: 20px;
 	min-height: 100%;
 }
 
