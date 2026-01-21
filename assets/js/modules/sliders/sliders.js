@@ -12,11 +12,12 @@ export function initSliders() {
 	initSlider('.hero-slider', {
 		modules: [Pagination, Autoplay],
 
-		// loop: true,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false,
-		// },
+		loop: true,
+		speed: 1200,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
 
 		pagination: {
 			el: '.swiper-pagination',
