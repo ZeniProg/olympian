@@ -12,6 +12,7 @@ export function initSliders() {
 	initSlider('.hero-slider', {
 		modules: [Pagination, Autoplay],
 
+		spaceBetween: 30,
 		loop: true,
 		speed: 1200,
 		autoplay: {
